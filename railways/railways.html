@@ -1,0 +1,77 @@
+<!-- Készítette: Fiók Nándor, GSTQLI -->
+ 
+ <!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railways</title>
+    <link rel="stylesheet" href="railways.css">
+</head>
+<body>
+    <div id="menuscreen">
+        <img alt="railways logo" src="media/rw_logo.png"><br>
+        <input type="text" id="nameinput" placeholder="ADD MEG A NEVED!">
+        <table class="menutable">
+            <tr>
+                <td rowspan="2" class="diffselect">
+                    <table>
+                        <tr>
+                            <td colspan="2"><p>ÁLLÍTSD BE A NEHÉZSÉGET!</p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="active" id="easymode">5 X 5</button></td>
+                            <td><button id="hardmode">7 X 7</button></td>
+                        </tr>
+                        <tr>
+                            <td><p>KÖNNYŰ</p></td>
+                            <td><p>NEHÉZ </p></td>
+                        </tr>
+                    </table>
+                </td>
+                <td><button id="showdesc">LEÍRAS</button></td>
+            </tr>
+            <tr>
+                <td><button id="start" disabled>JÁTÉK INDÍTÁSA</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="descscreen">
+        <img alt="railways logo" src="media/rw_logo.png">
+        <p>Nekeresdországban Nevenincs király szeretne egy körvasutat építeni, amely bejárja a birodalmának minden szegletét. A feladat megvalósítása Furfangra, az udvari tanácsosra vár, akinek a munkáját nehezíti a királyság változatos tája. Segítsünk Furfangnak megtervezni a királyság vasúthálózatához tartozó térképet!</p>
+        <img alt="megoldott mintafeladat" src="media/solution.png"><br>
+        <img alt="szabalyok" src="media/rules.png"><br>
+        <button id="hidedesc">VISSZA</button>
+    </div>
+    <div id="gamescreen">
+        <table>
+            <tr>
+                <td><img alt="railways logo" src="media/rw_logo.png"></td>
+                <td rowspan="2">
+                    <div id="game"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="gamestats">
+                        <p>ÚTVONALTERVEZŐ:</p>
+                        <p id="name"></p>
+                        <hr>
+                        <p>ELTELT IDŐ:</p>
+                        <p id="time">00:00</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="popup">
+        <h2>GRATULÁLOK!</h2>
+        <p>Sikeresen megépítetted a vasutat. Nekeresdország büszke rád!</p>
+        <p id="finaltime">Eltelt idő: 00:00</p>
+        <h2>RANGLISTA:</h2>
+        <div id="ranklist"></div>
+        <button id="backtomenu">VISSZA A MENÜBE</button>
+    </div>
+    <script type="text/javascript" src="railways.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* Készítette: Fiók Nándor, GSTQLI */
+
+body
+{
+    padding-top: 3rem;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(245,246,232);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+table td { text-align: center; }
+
+/* description screen details */
+#descscreen
+{
+    margin: 2rem auto;
+    font-size: larger;
+    text-align: center;
+    background-color: #fafffc;
+    width: 50rem;
+    padding: 15px;
+    border: 3.5px solid #ffa64d;
+    border-radius: 10px;
+}
+#descscreen img { width: 35rem; }
+#descscreen img:nth-of-type(2)
+{
+    border: 5px solid #7a573a;
+    border-radius: 10px;
+}
+#descscreen img:nth-of-type(3) { width: 40rem; }
+#descscreen p { text-align: justify; }
+
+/* menu screen details */
+#menuscreen
+{
+    text-align: center;
+    padding-top: 30px;
+}
+#menuscreen img { width: 35rem; margin-top: 12.5px;}
+#nameinput
+{
+    margin: 1rem;
+    width: 35rem;
+    height: 3rem;
+    font-size: larger;
+    padding-left: 10px;
+    border: 3.5px solid #ffa64d;
+    border-radius: 10px;
+    background-color: #fafffc;
+    font-weight: bold;
+}
+#nameinput::placeholder { color: #ffbf80; }
+#nameinput:focus { outline: 1px solid #ffa64d; }
+.menutable { width: 35rem; margin-left: auto; margin-right: auto;}
+.menutable table
+{
+    width: 100%;
+    background-color: #fafffc;
+    border: 2.5px solid #669900;
+    border-radius: 10px;
+}
+.menutable table td { width: 50%; }
+.active { background-color: #99cc00; }
+#showdesc, #hidedesc, #start
+{
+    height: 4.5rem;
+    background-color: #d9ff66;
+}
+button:active, #showdesc:active, #hidedesc:active, #start:active { background-color: #86b300; }
+button
+{
+    background-color: #fafffc;
+    width: 10rem;
+    height: 3.5rem;
+    border: 2.5px solid #669900;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+/* game screen details */
+#gamescreen
+{
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#gamescreen img { width: 20rem; }
+td:has(img):not(#gameBoard) { padding-top: 30px; }
+.gamestats
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #fafffc;
+    border: 4px solid #dbbf7e;
+    border-radius: 10px;
+}
+#gamescreen p
+{
+    font-size: x-large;
+    color: #555555;
+    margin: 10px;
+}
+#gamescreen #name, #gamescreen #time
+{
+    font-size: xx-large;
+    color: black;
+}
+#gameBoard img /* TODO: ACTUAL BOARD WILL NOT BE A SINGLE IMG!!! */
+{
+    margin-left: 40px;
+    width: 35rem;
+}
+#game
+{
+    margin-left: 2rem;
+    border: 5px solid #7a573a;
+    border-radius: 10px;
+}
+hr
+{
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 2px solid #e5d2a6f6;
+    border-radius: 10px;
+}
+.grid7x7
+{
+    display: grid;
+    grid-template-columns: repeat(7, 75px);
+}
+
+.grid5x5
+{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+}
+
+.grid7x7 .cell
+{
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid5x5 .cell
+{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+
+
+#popup
+{
+    text-align: center;
+    font-size: larger;
+    background-color: #fafffc;
+    border: 4px solid #dbbf7e;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 17%;
+    left: 27%;
+    z-index: 10;
+}
+#backtomenu
+{
+    border: 4px solid #dbbf7e;
+    border-radius: 10px;
+}
+#backtomenu:active
+{
+    background-color: #f5d893;
+}
